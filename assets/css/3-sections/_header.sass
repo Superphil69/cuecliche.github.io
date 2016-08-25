@@ -1,0 +1,61 @@
+header
+
+  .social-links
+    max-width: 700px
+    float: right
+    +display(flex)
+    +justify-content(space-around)
+    +flex-wrap(wrap)
+
+    img
+      display: inline-block
+      +size(40px)
+      line-height: 50px
+      color: green
+      border-radius: 50%
+      margin: 10px 5px
+      position: relative
+
+      &:hover
+        +transform(scale(1.5))
+        opacity: 2
+
+  .corner-title
+    a
+      font-family: fantasy, "Times New Roman"
+      font-style: italic
+      font-size: 50px
+      float: left
+      margin: 10px 5px
+      z-index: 2
+      position: absolute
+      color: #888C8C
+      opacity: .4
+
+  .title-image
+    img
+      max-height: 300px
+      width: 100%
+      z-index: 1
+      position: relative
+
+  .nav-bar
+    text-align: center
+    a
+      display: inline-block
+      font-size: 20px
+      text-decoration: none
+      margin: 10px 0
+      padding: 0 20px
+      color: #17526e
+
+      &:focus
+        outline: none
+        border-color: #33F0FF
+        border: 3px solid #0262B7
+        background-color: #0262B7
+
+      &:hover
+        border: 3px solid #8db9c8
+        background-color: #8db9c8
+        border-radius: 12px

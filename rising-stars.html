@@ -1,0 +1,40 @@
+---
+---
+
+<link rel="stylesheet" href="assets/css/all.css">
+
+<body>
+
+  <div class="stars">
+
+    {% include header.html %}
+
+    <div class="star">
+      <h2>Star of the Week!</h2>
+      <p>23/8/16</p>
+    </div>
+
+    <div id="wrapper">
+
+      <div id="effect">
+      <img class="star-pic" src="assets/img/coming-soon.jpg"></img>
+      <p>Is it you?</p>
+        <img src="assets/img/curtain1.jpg" id="curtain1">
+        <img src="assets/img/curtain2.jpg" id="curtain2">
+      </div>
+
+      <div id="curtain_buttons">
+        <input type="button" value="OPEN CURTAIN" class="open_curtain">
+        <input type="button" value="CLOSE CURTAIN" class="close_curtain">
+      </div>
+
+    </div>
+
+    {% include footer.html %}
+
+  </div>
+
+</body>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="assets/js/functions.js"></script>
