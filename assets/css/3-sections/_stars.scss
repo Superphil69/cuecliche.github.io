@@ -75,6 +75,9 @@
   &:hover {
     transform: scale(1.1);
   }
+  &:focus {
+    outline: none;
+  }
 }
 
 @media only screen and (max-width:750px) {
