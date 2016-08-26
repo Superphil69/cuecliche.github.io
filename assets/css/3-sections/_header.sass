@@ -41,7 +41,7 @@ header
 
   .nav-bar
     text-align: center
-    a
+    .nav-button
       display: inline-block
       font-size: 20px
       text-decoration: none
@@ -60,6 +60,8 @@ header
         background-color: #8db9c8
         border-radius: 12px
 
-@media only screen and (max-width:750px)
-  .nav-bar
-    max-width: 650px
+@media only screen and (max-width:1000px)
+  .nav-button
+    padding: 0 10px
+    &:focus
+      +transform(scale(.8))

@@ -489,26 +489,32 @@ header .title-image img {
   position: relative; }
 header .nav-bar {
   text-align: center; }
-  header .nav-bar a {
+  header .nav-bar .nav-button {
     display: inline-block;
     font-size: 20px;
     text-decoration: none;
     margin: 10px 0;
     padding: 0 20px;
     color: #17526e; }
-    header .nav-bar a:focus {
+    header .nav-bar .nav-button:focus {
       outline: none;
       border-color: #33F0FF;
       border: 3px solid #0262B7;
       background-color: #0262B7; }
-    header .nav-bar a:hover {
+    header .nav-bar .nav-button:hover {
       border: 3px solid #8db9c8;
       background-color: #8db9c8;
       border-radius: 12px; }
 
-@media only screen and (max-width: 750px) {
-  .nav-bar {
-    max-width: 650px; } }
+@media only screen and (max-width: 1000px) {
+  .nav-button {
+    padding: 0 10px; }
+    .nav-button:focus {
+      -webkit-transform: scale(0.8);
+      -moz-transform: scale(0.8);
+      -ms-transform: scale(0.8);
+      -o-transform: scale(0.8);
+      transform: scale(0.8); } }
 footer {
   text-align: center; }
   footer p {
