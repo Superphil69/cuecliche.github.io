@@ -529,7 +529,8 @@ footer {
     width: 100%; }
 
 .home-page {
-  overflow-x: hidden; }
+  overflow-x: hidden;
+  width: 100%; }
 
 .reminders {
   border-radius: 25px;
@@ -547,6 +548,13 @@ footer {
   right: 0; }
   .reminders:hover {
     margin-right: 0; }
+
+.reminders:hover, .hover_effect {
+  margin-right: 0; }
+
+.hover {
+  -webkit-user-select: none;
+  -webkit-touch-callout: none; }
 
 .blog {
   text-align: center;

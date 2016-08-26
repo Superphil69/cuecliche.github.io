@@ -11,3 +11,10 @@ $(document).ready(function() {
    $("#curtain2").animate({width:220},1000);
  });
 });
+
+$(document).ready(function() {
+    $('.hover').bind('touchstart touchend', function(e) {
+        e.preventDefault();
+        $(this).toggleClass('hover_effect');
+    });
+});
