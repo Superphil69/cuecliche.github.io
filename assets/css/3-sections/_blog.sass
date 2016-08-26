@@ -1,8 +1,8 @@
 .home-page
   overflow-x: hidden
-  width: 100%
 
-.reminders
+
+.hover_effect
   border-radius: 25px
   height: 250px
   width: 500px
@@ -20,8 +20,9 @@
   &:hover
     margin-right: 0
 
-.reminders:hover, .hover_effect
-  margin-right: 0
+@media only screen and (max width: 750px)
+  .hover_effect
+    margin-right: 0
 
 .hover
   -webkit-user-select: none
