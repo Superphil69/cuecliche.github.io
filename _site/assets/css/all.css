@@ -507,14 +507,18 @@ header .nav-bar {
       border-radius: 12px; }
 
 @media only screen and (max-width: 1000px) {
-  .nav-button {
-    padding: 0 10px; }
-    .nav-button:focus {
-      -webkit-transform: scale(0.8);
-      -moz-transform: scale(0.8);
-      -ms-transform: scale(0.8);
-      -o-transform: scale(0.8);
-      transform: scale(0.8); } }
+  .nav-bar {
+    width: 600;
+    text-align: center;
+    margin: 0 auto; }
+    .nav-bar .nav-button {
+      padding: 0 10px; }
+      .nav-bar .nav-button:focus {
+        -webkit-transform: scale(0.8);
+        -moz-transform: scale(0.8);
+        -ms-transform: scale(0.8);
+        -o-transform: scale(0.8);
+        transform: scale(0.8); } }
 footer {
   text-align: center; }
   footer p {
