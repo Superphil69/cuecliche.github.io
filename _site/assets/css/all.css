@@ -1006,9 +1006,6 @@ footer {
     text-align: justify; }
   .apps h1 {
     text-align: center; }
-  .apps .app-pdf {
-    overflow-y: scroll;
-    -webkit-overflow-scrolling: touch; }
 
 @media only screen and (max-width: 750px) {
   .apps {
