@@ -494,7 +494,7 @@ header .nav-bar {
     font-size: 20px;
     text-decoration: none;
     margin: 10px 0;
-    padding: 0 20px;
+    padding: 3px 20px;
     color: #17526e; }
     header .nav-bar .nav-button:focus {
       outline: none;
@@ -503,6 +503,7 @@ header .nav-bar {
       background-color: #0262B7; }
     header .nav-bar .nav-button:hover {
       border: 3px solid #8db9c8;
+      padding: 0 17px;
       background-color: #8db9c8;
       border-radius: 12px; }
 
@@ -528,11 +529,38 @@ footer {
     padding: 10px;
     width: 100%; }
 
+.blog-post {
+  width: 750px;
+  margin: 0 auto;
+  color: #17526e;
+  box-shadow: 0 -2px 3px -2px rgba(0, 0, 0, 0.2), 0 2px 2px rgba(0, 0, 0, 0.1);
+  padding: 5px 10px; }
+  .blog-post p {
+    text-align: justify; }
+  .blog-post .h1-blog-title {
+    text-decoration: underline;
+    font-size: 28px;
+    text-align: center; }
+  .blog-post .h2-blog-title {
+    font-size: 24px; }
+
+@media only screen and (max-width: 1000px) {
+  .blog-post {
+    width: 750px; } }
+@media only screen and (max-width: 750px) {
+  .blog-post {
+    width: 350px; } }
 .blog-page {
   text-align: center;
   width: 750px;
   margin: 0px auto;
   z-index: 1; }
+  .blog-page ul {
+    list-style-type: none; }
+  .blog-page li {
+    box-shadow: 0 -2px 3px -2px rgba(0, 0, 0, 0.2), 0 2px 2px rgba(0, 0, 0, 0.1);
+    padding: 5px 10px;
+    margin-bottom: 20px; }
   .blog-page .post-link {
     text-decoration: none;
     color: #17526e; }
@@ -547,20 +575,26 @@ footer {
       border-radius: 12px; }
   .blog-page .rss-subscribe a {
     text-decoration: none;
-    color: #17526e; }
+    color: #17526e;
+    padding: 0 3px; }
     .blog-page .rss-subscribe a:focus {
       outline: none;
       border-color: #33F0FF;
       border: 3px solid #0262B7;
-      background-color: #0262B7; }
+      background-color: #0262B7;
+      padding: 0; }
     .blog-page .rss-subscribe a:hover {
       border: 3px solid #8db9c8;
       background-color: #8db9c8;
-      border-radius: 12px; }
+      border-radius: 12px;
+      padding: 0; }
   .blog-page .excerpt {
     color: #0262B7;
     background-color: green; }
 
+@media only screen and (max-width: 800px) {
+  .blog-page {
+    width: 400px; } }
 .sub-tabs {
   position: relative;
   margin: 40px auto;

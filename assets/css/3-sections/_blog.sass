@@ -4,6 +4,14 @@
   margin: 0px auto
   z-index: 1
 
+  ul
+    list-style-type: none
+
+  li
+    box-shadow: 0 -2px 3px -2px rgba(0,0,0,0.2), 0 2px 2px rgba(0,0,0,0.1)
+    padding: 5px 10px
+    margin-bottom: 20px
+
   .post-link
     text-decoration: none
     color: #17526e
@@ -22,18 +30,25 @@
   .rss-subscribe a
     text-decoration: none
     color: #17526e
+    padding: 0 3px
 
     &:focus
       outline: none
       border-color: #33F0FF
       border: 3px solid #0262B7
       background-color: #0262B7
+      padding: 0
 
     &:hover
       border: 3px solid #8db9c8
       background-color: #8db9c8
       border-radius: 12px
+      padding: 0
 
   .excerpt
     color: #0262B7
     background-color: green
+
+@media only screen and (max-width: 800px)
+  .blog-page
+    width: 400px
