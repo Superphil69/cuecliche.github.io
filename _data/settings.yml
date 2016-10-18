@@ -1,0 +1,16 @@
+#-------------------------------
+# Clients Section
+
+clients:
+- {full: 'band1.jpg',
+  thumb: 'band1-thumb.jpg'}
+- {full: 'band2.jpg',
+  thumb: 'band2-thumb.jpg'}
+- {full: 'band3.jpg',
+  thumb: 'band3-thumb.jpg'}
+- {full: 'jake.jpg',
+  thumb: 'jake-thumb.jpg'}
+- {full: 'keith.jpg',
+  thumb: 'keith-thumb.jpg'}
+- {full: 'terry.jpg',
+  thumb: 'terry-thumb.jpg'}

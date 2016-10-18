@@ -1,0 +1,59 @@
+@include font-face (Paet, PAETRRG_-webfont)
+
+.bgd
+  background-image: url("/assets/img/background-epk.png")
+  background-repeat: no-repeat
+  background-size: cover
+
+header
+
+  .index-2
+    .title-default
+      text-align: center
+      img
+        max-height: 300px
+        width: auto
+
+
+  .index-1
+    .nav-bar
+      text-align: right
+      .nav-button
+        display: inline-block
+        font-size: 20px
+        text-decoration: none
+        margin: 10px 0
+        padding: 3px 20px
+        color: #FF00FF
+
+        &:focus
+          background-image: url("/assets/img/rose.png")
+          background-position: center
+          background-repeat: no-repeat
+          color: #00FFFF
+          cursor: pointer
+
+        &:hover
+          background-image: url("/assets/img/rose.png")
+          background-position: center
+          background-repeat: no-repeat
+          color: #00FFFF
+          cursor: pointer
+
+@media only screen and (max-width:1000px)
+  .index-1
+    .nav-bar
+      max-width: 600
+      text-align: center
+      .nav-button
+        padding: 3px 0
+
+@media only screen and (max-width:600px)
+  .index-1
+    .nav-bar
+      width: 100%
+      font-size: 5px
+      //.nav-button
+        font-size: 5px
+        &:focus
+          +transform(scale(.8))

@@ -1,0 +1,77 @@
+form
+  max-width: 450px
+  margin: 40px auto 100px
+  padding: 0 20px
+  border: none
+
+  input, textarea
+    border: 3px solid #FF00FF
+    width: 100%
+    +box-sizing(border-box)
+    padding: 10px
+    -webkit-appearance: none
+    -moz-appearance: none
+    appearance: none
+    font-size: 16px
+
+    &:focus
+      outline: none
+      border-color: #00FF00
+
+  label
+    color: #FF00FF
+
+  textarea
+    height: 10em
+    resize: none
+
+  .submit-wrap
+    text-align: right
+
+  [type="submit"]
+    background: #FF00FF
+    color: #00FFFF
+    font-size: 18px
+    text-transform: uppercase
+    width: 33%
+
+    &:hover
+      background: #00FF00
+
+  .contact-info-group
+
+    label
+      width: 50%
+      float: left
+      +box-sizing(border-box)
+
+      &:nth-child(1)
+        padding-right: 10px
+        padding-left: -10px
+
+      &:nth-child(2)
+        padding-left: 10px
+        padding-right: -10px
+
+  label
+    display: block
+    margin-bottom: 20px
+
+    span
+      display: block
+
+@media (max-width: 541px)
+  form
+    .contact-info-group
+
+      label
+        width: 100%
+
+        &:nth-child(1)
+          padding: 0
+
+        &:nth-child(2)
+          padding: 0
+
+    [type="submit"]
+      width: 100%

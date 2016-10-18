@@ -1,0 +1,210 @@
+@include font-face (Paet, PAETRRG_-webfont)
+
+.epk
+  max-width: 960px
+  margin: 0 auto
+  text-align: center
+  font-family: 'Paet'
+
+  .header
+    width: 100%
+    color: #00FF00
+    font-size: 40px
+
+  .profile
+    img
+      width: 960px
+      -webkit-box-shadow: 0px 0px 60px 3px rgba(66,51,37,1)
+      -moz-box-shadow: 0px 0px 60px 3px rgba(66,51,37,1)
+      box-shadow: 0px 0px 60px 3px rgba(66,51,37,1)
+
+  .social
+    +display(flex)
+    +justify-content(space-around)
+    +flex-wrap(wrap)
+
+    .links
+      a
+        display: inline-block
+        +size(80px)
+        line-height: 80px
+        text-align: center
+        color: #00FFFF
+        border-radius: 50%
+        margin: 10px 15px
+        position: relative
+        background-color: #FF00FF
+        text-decoration: none
+        font-size: 50px
+
+        &:hover
+          +transform(scale(1.5))
+          opacity: 2
+          cursor: pointer
+
+  .music
+    .epk-video
+      iframe
+        width: 640px
+        height: 360px
+        margin: 5px
+        -webkit-box-shadow: 0px 0px 60px 3px rgba(66,51,37,1)
+        -moz-box-shadow: 0px 0px 60px 3px rgba(66,51,37,1)
+        box-shadow: 0px 0px 60px 3px rgba(66,51,37,1)
+
+  .bio
+    .bio-text
+      text-align: justify
+      color: #FF00FF
+
+  .pics
+    position: relative
+    .pic-control
+      +position(absolute, 0px 0px 0px 0px)
+      z-index: 2
+
+      > div
+        +size(40px)
+        overflow: hidden
+        margin-top: -20px
+        cursor: pointer
+        &:hover
+          +transform(scale(1.5))
+
+      path
+        fill: #FF00FF
+
+      .pic-control-next
+        +position(absolute, 50% -40px null null)
+
+      .pic-control-prev
+        +position(absolute, 50% null null -40px)
+
+    .pic-reel
+      margin: 0px auto
+      width: 940px
+      height: 0
+      overflow: hidden
+      transition: opacity 1s ease-out
+      opacity: 0
+      -webkit-box-shadow: 0px 0px 60px 3px rgba(66,51,37,1)
+      -moz-box-shadow: 0px 0px 60px 3px rgba(66,51,37,1)
+      box-shadow: 0px 0px 60px 3px rgba(66,51,37,1)
+
+      &.active-client
+        height: auto
+        opacity: 1
+
+    .pic-thumbs
+      z-index: 3
+      position: relative
+      .pic-thumb
+        display: inline-block
+        width: 148.3px
+        height: auto
+        margin: 5px 0px
+        opacity: 0.5
+
+        &:hover
+          opacity: 0.8
+          cursor: pointer
+
+        &.active-client
+          border: 2px solid #FF00FF
+          opacity: 1
+
+  .shows
+    .shows-toolbar
+      margin: 40px auto 40px
+      background-color: #FF00FF
+      border: 3px solid #00FF00
+
+  .epk-contact
+    .contact-info
+      color: #FF00FF
+
+    .big-link
+      margin-bottom: 30px
+      padding-bottom: 30px
+      a
+        color: #FF00FF
+        font-size: 30px
+
+        &:hover
+          +transform(scale(1.5))
+          color: #00FF00
+
+
+@media only screen and (max-width:1020px)
+  .epk
+    max-width: 95%
+
+    .profile
+      img
+        width: 100%
+
+    .pics
+      .pic-control
+        .pic-control-next
+          +position(absolute, 50% 10px null null)
+
+        .pic-control-prev
+          +position(absolute, 50% null null 10px)
+
+      .pic-reel
+        width: 98%
+      .pic-thumbs
+        .pic-thumb
+          width: 15.3%
+
+@media only screen and (max-width:800px)
+  .epk
+    .shows
+      .shows-toolbar
+        max-width: 100%
+
+@media only screen and (max-width:700px)
+  .epk
+    .header
+      font-size: 30px
+
+    .music
+      .epk-video
+        iframe
+          width: 90%
+          height: 45%
+
+    .pics
+      .pic-control
+        display: none
+
+      .pic-thumbs
+        .pic-thumb
+          width: 31.3%
+
+@media only screen and (max-width:500px)
+  .epk
+    .social
+      .links
+        a
+          +size(50px)
+          line-height: 50px
+          font-size: 25px
+
+    .music
+      .epk-video
+        iframe
+          height: 30%
+
+@media only screen and (max-width:430px)
+  .epk
+    .pics
+      .pic-thumbs
+        .pic-thumb
+          width: 30%
+
+    .epk-contact
+      .big-link
+        a
+          color: #FF00FF
+          font-size: 25px

@@ -1,72 +1,68 @@
+@include font-face (Paet, PAETRRG_-webfont)
+
+.bgd
+  background-image: url("/assets/img/background-epk.png")
+  background-repeat: no-repeat
+  background-size: cover
+
 header
 
-  .social-links
-    max-width: 700px
-    float: right
-    +display(flex)
-    +justify-content(space-around)
-    +flex-wrap(wrap)
+  .index-2
+    .title-image
+      text-align: center
+      img
+        max-height: 650px
+        width: 100%
+        margin-top: 0
 
-    img
-      display: inline-block
-      +size(40px)
-      line-height: 50px
-      color: green
-      border-radius: 50%
-      margin: 10px 5px
-      position: relative
+  .index-1
+    .nav-bar
+      text-align: right
+      margin-right: 5px
+      .nav-button
+        display: inline-block
+        font-size: 20px
+        text-decoration: none
+        margin: 10px 0
+        padding: 3px 0
+        color: #FF00FF
 
-      &:hover
-        +transform(scale(1.5))
-        opacity: 2
+        &:focus
+          background-image: url("/assets/img/rose.png")
+          background-position: center
+          background-repeat: no-repeat
+          color: #00FFFF
+          cursor: pointer
 
-  .corner-title
-    a
-      font-family: fantasy, "Times New Roman"
-      font-style: italic
-      font-size: 50px
-      float: left
-      margin: 10px 5px
-      z-index: 2
-      position: absolute
-      color: #888C8C
-      opacity: .4
+        &:hover
+          background-image: url("/assets/img/rose.png")
+          background-position: center
+          background-repeat: no-repeat
+          color: #00FFFF
+          cursor: pointer
 
-  .title-image
-    img
-      max-height: 300px
-      width: 100%
-      z-index: 1
-      position: relative
 
-  .nav-bar
-    text-align: center
-    .nav-button
-      display: inline-block
-      font-size: 20px
-      text-decoration: none
-      margin: 10px 0
-      padding: 3px 20px
-      color: #17526e
-
-      &:focus
-        outline: none
-        border-color: #33F0FF
-        border: 3px solid #0262B7
-        background-color: #0262B7
-
-      &:hover
-        border: 3px solid #8db9c8
-        padding: 0 17px
-        background-color: #8db9c8
-        border-radius: 12px
 
 @media only screen and (max-width:1000px)
-  .nav-bar
-    width: 600
-    text-align: center
-    margin: 0 auto
-    .nav-button
-      padding: 0 10px
-      &:focus
-        +transform(scale(.8))
+  #header
+    .index-1
+      .nav-bar
+        text-align: center
+        margin: 0 auto
+
+@media only screen and (max-width:541px)
+  #header
+    .index-1
+      .nav-bar
+        max-width: 541px
+        .nav-button
+          max-width: 30px
+          font-size: 15px
+
+          &:focus
+            background-image: url("/assets/img/rose-small.png")
+            background-size: 60px
+
+          &:hover
+            background-image: url("/assets/img/rose-small.png")
+            background-size: 60px

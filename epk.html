@@ -1,0 +1,93 @@
+---
+layout: epk-base
+---
+
+<section class="epk">
+
+  <section clas="title">
+    <h2>High energy 3 piece Pop-Punk band from London, UK.
+      <br>Brought together by a love of music and hatred of growing up.
+    </h2>
+  </section>
+
+  <div class="profile">
+    <img src="/assets/img/Band.jpg" alt="Image of Band">
+  </div>
+
+  <section class="social">
+    <div class="header">
+      <h1>Social</h1>
+    </div>
+    <div class="links">
+      <a href="https://twitter.com/cuecliche" target="_blank" class="icon-twitter" alt="twitter"></a>
+      <a href="https://www.facebook.com/cueclicheband" target="_blank" class="icon-facebook" alt="facebook"></a>
+      <a href="https://www.youtube.com/channel/UCYWS8waaoY0kStsNwc_VDyw" target="_blank" class="icon-youtube" alt ="youTube"></a>
+      <a href="https://www.instagram.com/cuecliche/" target="_blank" class="icon-instagram" alt ="instagram"></a>
+    </section>
+
+  <section class="music">
+    <div class="header">
+      <h1>Music</h1>
+    </div>
+    <div class="epk-video">
+      <iframe src="https://www.youtube.com/embed/-1Fqiak3B64" frameborder="0" allowfullscreen></iframe>
+      <iframe src="https://www.youtube.com/embed/BAW8QhViBOg" frameborder="0" allowfullscreen></iframe>
+    </div>
+  </section>
+
+  <section class="bio">
+    <div class="header">
+      <h1>Bio</h1>
+    </div>
+    <div class="bio-text">
+      <p>Formed in 2016 Cuecliché are a three-piece Pop-Punk band based in London. Jake (London), Terry (Liverpool) and Keith (Cork) were brought together through a love of music and a hatred of growing up, resulting in the perfect combination of emotion and fun in their music.
+        <br><br>Jake and Terry met in 2016 and instantly bonded over a love of being silly in every aspect of life except their music, which they have a lot of fun with but take very seriously. The project was moved forward at lightning speed and it became clear a drummer would be needed sooner rather than later. In Keith, the final puzzle piece was found.
+        <br><br>An overwhelmingly strong industry response to an initial batch of demos has now resulted in Cuecliché making their debut at the well-respected Fiddler’s Elbow in Camden, London, followed by a trip up north to Liverpool to play the Zanzibar.
+        <br><br>With each member having spent many years performing in various bands throughout their lives, they all believe Cuecliché will be the culmination of everything they have learnt from their past experiences (which is all encapsulated in their track “10th of July”). They promise to bring an engaging and energetic live show with an infectious on-stage energy.
+        <br><br>Currently putting the finishing touches to their first EP, Cuecliché are available to perform up and down the country.</p>
+    </div>
+  </section>
+
+  <section class="pics">
+    <div class="header">
+      <h1>Pictures</h1>
+    </div>
+    <div class="pic-control">
+      <div class="pic-control-next">{% include icons/icon-next.html %}</div>
+      <div class="pic-control-prev">{% include icons/icon-prev.html %}</div>
+    </div>
+    <div class="pic-belt">
+      {% for client in site.data.settings.clients %}
+        <img class="pic-reel {% if forloop.first %}active-client{% endif %}" src="assets/img/Band/{{ client.full }}" align="{{ client.full }}">
+      {% endfor %}
+    </div>
+    <div class="pic-thumbs">
+      {% for client in site.data.settings.clients %}
+        <img class="pic-thumb {% if forloop.first %}active-client{% endif %}" src="assets/img/Band/{{ client.thumb }}" align="{{ client.thumb }}">
+      {% endfor %}
+    </div>
+  </section>
+
+  <section class="shows">
+    <div class="header">
+      <h1>Upcoming Shows</h1>
+    </div>
+    <div class="shows-toolbar">
+      <script type='text/javascript' src='http://widget.bandsintown.com/javascripts/bit_widget.js'></script>
+
+      <a href="http://www.bandsintown.com/Cueclich%C3%A9" class="bit-widget-initializer" data-artist="Cuecliché" data-prefix="fbjs">Cuecliché Tour Dates</a>
+    </div>
+  </section>
+
+  <section class="epk-contact">
+    <div class="header">
+      <h1>Contact</h1>
+    </div>
+    <div class="contact-info">
+      <p>To contact Cuecliché for more information, gig bookings or press enquiries email:</p>
+    </div>
+    <div class="big-link">
+      <a href="mailto:cuecliche@gmail.com">cuecliche@gmail.com</a>
+    </div>
+  </section>
+</section>

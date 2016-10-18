@@ -1,0 +1,24 @@
+---
+layout: default
+---
+
+<form method="POST" action="//formspree.io/{{ site.data.settings.email }}">
+
+  <fieldset class="contact-info-group">
+
+    <label><span>Your Name</span>
+    <input type="text" name="name"></label>
+
+    <label><span>Your Email</span>
+    <input type="email" name="_replyto"></label>
+
+  </fieldset>
+
+  <label><span>Any Further Information</span>
+  <textarea name="message"></textarea></label>
+
+  <fieldset class="submit-wrap">
+    <input type="submit" value="Send">
+  </fieldset>
+
+</form>
