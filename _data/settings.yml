@@ -1,4 +1,9 @@
 #-------------------------------
+# General Site Settings
+
+email: cuecliche@gmail.com
+
+#-------------------------------
 # Clients Section
 
 clients:
