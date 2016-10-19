@@ -1,15 +1,18 @@
-@include font-face (Paet, PAETRRG_-webfont)
+@include font-face (SinkinSans, SinkinSans-500Medium-webfont)
+@include font-face (Journal, journal-webfont)
 
 .epk
   max-width: 960px
   margin: 0 auto
   text-align: center
-  font-family: 'Paet'
+  font-family: 'Journal'
+  font-size: 30px
 
   .header
     width: 100%
     color: #00FF00
     font-size: 40px
+    font-family: 'SinkinSans'
 
   .profile
     img
@@ -44,6 +47,9 @@
 
   .music
     .epk-video
+      h2
+        font-family: 'SinkinSans'
+        color: #FF00FF
       iframe
         width: 640px
         height: 360px
@@ -55,7 +61,6 @@
   .bio
     .bio-text
       text-align: justify
-      color: #FF00FF
 
   .pics
     position: relative
@@ -116,8 +121,14 @@
   .shows
     .shows-toolbar
       margin: 40px auto 40px
-      background-color: #FF00FF
-      border: 3px solid #00FF00
+      background-color: #FFFFFF
+      border: 3px solid #FF00FF
+      a
+        font-family: 'SinkinSans'
+        color: #FF00FF
+
+        &:hover
+          color: #00FF00
 
   .epk-contact
     .contact-info
@@ -128,7 +139,7 @@
       padding-bottom: 30px
       a
         color: #FF00FF
-        font-size: 30px
+        font-size: 50px
 
         &:hover
           +transform(scale(1.5))
@@ -202,9 +213,3 @@
       .pic-thumbs
         .pic-thumb
           width: 30%
-
-    .epk-contact
-      .big-link
-        a
-          color: #FF00FF
-          font-size: 25px
