@@ -431,15 +431,25 @@ td, th {
   content: "\e60a"; }
 
 @font-face {
-  font-family: Paet;
+  font-family: SinkinSans;
   font-weight: normal;
   font-style: normal;
-  src: url("PAETRRG_-webfont.eot");
-  src: url("PAETRRG_-webfont.eot?#iefix") format("embedded-opentype"), url("PAETRRG_-webfont.woff") format("woff"), url("PAETRRG_-webfont.ttf") format("truetype"), url("PAETRRG_-webfont.svg#Paet") format("svg"); }
-.bgd {
-  background-image: url("/assets/img/background-epk.png");
+  src: url("SinkinSans-500Medium-webfont.eot");
+  src: url("SinkinSans-500Medium-webfont.eot?#iefix") format("embedded-opentype"), url("SinkinSans-500Medium-webfont.woff") format("woff"), url("SinkinSans-500Medium-webfont.ttf") format("truetype"), url("SinkinSans-500Medium-webfont.svg#SinkinSans") format("svg"); }
+@font-face {
+  font-family: Journal;
+  font-weight: normal;
+  font-style: normal;
+  src: url("journal-webfont.eot");
+  src: url("journal-webfont.eot?#iefix") format("embedded-opentype"), url("journal-webfont.woff") format("woff"), url("journal-webfont.ttf") format("truetype"), url("journal-webfont.svg#Journal") format("svg"); }
+body {
+  background-image: url("/assets/img/background.png");
   background-repeat: no-repeat;
-  background-size: cover; }
+  background-size: cover;
+  width: 100%;
+  bottom: 0;
+  background-color: #71ccde;
+  height: 100%; }
 
 header .index-2 .title-image {
   text-align: center; }
@@ -487,7 +497,8 @@ header .index-1 .nav-bar {
         background-image: url("/assets/img/rose-small.png");
         background-size: 60px; } }
 footer {
-  text-align: center; }
+  text-align: center;
+  bottom: 0; }
   footer p {
     position: absolute;
     color: #FF00FF;
@@ -495,9 +506,12 @@ footer {
     background-repeat: no-repeat;
     background-size: cover;
     padding: 10px 0px;
-    width: 100%; }
+    width: 100%;
+    font-family: "SinkinSans"; }
   footer a {
     color: #FF00FF; }
+    footer a:hover {
+      color: #00FF00; }
 
 @font-face {
   font-family: Paet;
@@ -618,7 +632,7 @@ footer {
   max-width: 960px;
   margin: 0 auto;
   text-align: center;
-  font-family: "Paet"; }
+  font-family: "SinkinSans"; }
   .gigs-page .header {
     width: 100%;
     color: #00FF00;
@@ -626,8 +640,13 @@ footer {
   .gigs-page .gigs {
     max-width: 800px;
     margin: 40px auto 40px;
-    background-color: #FF00FF;
-    border: 3px solid #00FF00; }
+    background-color: #FFFFFF;
+    border: 3px solid #FF00FF; }
+    .gigs-page .gigs a {
+      font-family: "SinkinSans";
+      color: #FF00FF; }
+      .gigs-page .gigs a:hover {
+        color: #00FF00; }
   @media only screen and (max-width: 800px) {
     .gigs-page {
       max-width: 100%; } }
@@ -635,6 +654,10 @@ footer {
 .music-video {
   max-width: 940px;
   margin: 0px auto; }
+  .music-video h2 {
+    font-family: "SinkinSans";
+    color: #FF00FF;
+    text-align: center; }
   .music-video iframe {
     width: 940px;
     height: 530px;
@@ -654,7 +677,8 @@ form {
   max-width: 450px;
   margin: 40px auto 100px;
   padding: 0 20px;
-  border: none; }
+  border: none;
+  font-family: "SinkinSans"; }
   form input, form textarea {
     border: 3px solid #FF00FF;
     width: 100%;
@@ -665,7 +689,8 @@ form {
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
-    font-size: 16px; }
+    font-size: 16px;
+    font-family: "SinkinSans"; }
     form input:focus, form textarea:focus {
       outline: none;
       border-color: #00FF00; }
@@ -681,9 +706,11 @@ form {
     color: #00FFFF;
     font-size: 18px;
     text-transform: uppercase;
-    width: 33%; }
+    width: 33%;
+    font-family: "SinkinSans"; }
     form [type="submit"]:hover {
-      background: #00FF00; }
+      background: #00FF00;
+      color: #FF00FF; }
   form .contact-info-group label {
     width: 50%;
     float: left;
@@ -762,15 +789,25 @@ form {
   content: "\e60a"; }
 
 @font-face {
-  font-family: Paet;
+  font-family: SinkinSans;
   font-weight: normal;
   font-style: normal;
-  src: url("PAETRRG_-webfont.eot");
-  src: url("PAETRRG_-webfont.eot?#iefix") format("embedded-opentype"), url("PAETRRG_-webfont.woff") format("woff"), url("PAETRRG_-webfont.ttf") format("truetype"), url("PAETRRG_-webfont.svg#Paet") format("svg"); }
-.bgd {
-  background-image: url("/assets/img/background-epk.png");
+  src: url("SinkinSans-500Medium-webfont.eot");
+  src: url("SinkinSans-500Medium-webfont.eot?#iefix") format("embedded-opentype"), url("SinkinSans-500Medium-webfont.woff") format("woff"), url("SinkinSans-500Medium-webfont.ttf") format("truetype"), url("SinkinSans-500Medium-webfont.svg#SinkinSans") format("svg"); }
+@font-face {
+  font-family: Journal;
+  font-weight: normal;
+  font-style: normal;
+  src: url("journal-webfont.eot");
+  src: url("journal-webfont.eot?#iefix") format("embedded-opentype"), url("journal-webfont.woff") format("woff"), url("journal-webfont.ttf") format("truetype"), url("journal-webfont.svg#Journal") format("svg"); }
+body {
+  background-image: url("/assets/img/background.png");
   background-repeat: no-repeat;
-  background-size: cover; }
+  background-size: cover;
+  width: 100%;
+  bottom: 0;
+  background-color: #71ccde;
+  height: 100%; }
 
 header .index-2 .title-default {
   text-align: center; }
@@ -810,20 +847,28 @@ header .index-1 .nav-bar {
     width: 100%;
     font-size: 5px; } }
 @font-face {
-  font-family: Paet;
+  font-family: SinkinSans;
   font-weight: normal;
   font-style: normal;
-  src: url("PAETRRG_-webfont.eot");
-  src: url("PAETRRG_-webfont.eot?#iefix") format("embedded-opentype"), url("PAETRRG_-webfont.woff") format("woff"), url("PAETRRG_-webfont.ttf") format("truetype"), url("PAETRRG_-webfont.svg#Paet") format("svg"); }
+  src: url("SinkinSans-500Medium-webfont.eot");
+  src: url("SinkinSans-500Medium-webfont.eot?#iefix") format("embedded-opentype"), url("SinkinSans-500Medium-webfont.woff") format("woff"), url("SinkinSans-500Medium-webfont.ttf") format("truetype"), url("SinkinSans-500Medium-webfont.svg#SinkinSans") format("svg"); }
+@font-face {
+  font-family: Journal;
+  font-weight: normal;
+  font-style: normal;
+  src: url("journal-webfont.eot");
+  src: url("journal-webfont.eot?#iefix") format("embedded-opentype"), url("journal-webfont.woff") format("woff"), url("journal-webfont.ttf") format("truetype"), url("journal-webfont.svg#Journal") format("svg"); }
 .epk {
   max-width: 960px;
   margin: 0 auto;
   text-align: center;
-  font-family: "Paet"; }
+  font-family: "Journal";
+  font-size: 30px; }
   .epk .header {
     width: 100%;
     color: #00FF00;
-    font-size: 40px; }
+    font-size: 40px;
+    font-family: "SinkinSans"; }
   .epk .profile img {
     width: 960px;
     -webkit-box-shadow: 0px 0px 60px 3px #423325;
@@ -874,6 +919,9 @@ header .index-1 .nav-bar {
         transform: scale(1.5);
         opacity: 2;
         cursor: pointer; }
+  .epk .music .epk-video h2 {
+    font-family: "SinkinSans";
+    color: #FF00FF; }
   .epk .music .epk-video iframe {
     width: 640px;
     height: 360px;
@@ -882,8 +930,7 @@ header .index-1 .nav-bar {
     -moz-box-shadow: 0px 0px 60px 3px #423325;
     box-shadow: 0px 0px 60px 3px #423325; }
   .epk .bio .bio-text {
-    text-align: justify;
-    color: #FF00FF; }
+    text-align: justify; }
   .epk .pics {
     position: relative; }
     .epk .pics .pic-control {
@@ -945,8 +992,13 @@ header .index-1 .nav-bar {
           opacity: 1; }
   .epk .shows .shows-toolbar {
     margin: 40px auto 40px;
-    background-color: #FF00FF;
-    border: 3px solid #00FF00; }
+    background-color: #FFFFFF;
+    border: 3px solid #FF00FF; }
+    .epk .shows .shows-toolbar a {
+      font-family: "SinkinSans";
+      color: #FF00FF; }
+      .epk .shows .shows-toolbar a:hover {
+        color: #00FF00; }
   .epk .epk-contact .contact-info {
     color: #FF00FF; }
   .epk .epk-contact .big-link {
@@ -954,7 +1006,7 @@ header .index-1 .nav-bar {
     padding-bottom: 30px; }
     .epk .epk-contact .big-link a {
       color: #FF00FF;
-      font-size: 30px; }
+      font-size: 50px; }
       .epk .epk-contact .big-link a:hover {
         -webkit-transform: scale(1.5);
         -moz-transform: scale(1.5);
@@ -1003,19 +1055,27 @@ header .index-1 .nav-bar {
     height: 30%; } }
 @media only screen and (max-width: 430px) {
   .epk .pics .pic-thumbs .pic-thumb {
-    width: 30%; }
-  .epk .epk-contact .big-link a {
-    color: #FF00FF;
-    font-size: 25px; } }
+    width: 30%; } }
 @font-face {
-  font-family: Paet;
+  font-family: SinkinSans;
   font-weight: normal;
   font-style: normal;
-  src: url("PAETRRG_-webfont.eot");
-  src: url("PAETRRG_-webfont.eot?#iefix") format("embedded-opentype"), url("PAETRRG_-webfont.woff") format("woff"), url("PAETRRG_-webfont.ttf") format("truetype"), url("PAETRRG_-webfont.svg#Paet") format("svg"); }
-.bgd-epk {
-  background-image: url("/assets/img/background-epk.png");
-  background-size: cover; }
+  src: url("SinkinSans-500Medium-webfont.eot");
+  src: url("SinkinSans-500Medium-webfont.eot?#iefix") format("embedded-opentype"), url("SinkinSans-500Medium-webfont.woff") format("woff"), url("SinkinSans-500Medium-webfont.ttf") format("truetype"), url("SinkinSans-500Medium-webfont.svg#SinkinSans") format("svg"); }
+@font-face {
+  font-family: Journal;
+  font-weight: normal;
+  font-style: normal;
+  src: url("journal-webfont.eot");
+  src: url("journal-webfont.eot?#iefix") format("embedded-opentype"), url("journal-webfont.woff") format("woff"), url("journal-webfont.ttf") format("truetype"), url("journal-webfont.svg#Journal") format("svg"); }
+body {
+  background-image: url("/assets/img/background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  bottom: 0;
+  background-color: #71ccde;
+  height: 100%; }
 
 header .index-epk .title-default {
   text-align: center; }
@@ -1057,9 +1117,26 @@ header .index-1 .nav-bar {
   header .index-1 .nav-bar {
     width: 100%;
     font-size: 5px; } }
-.password input {
+.password h2 {
+  text-align: center;
+  margin: 40px auto;
+  max-width: 700px;
+  font-family: "Journal";
+  font-size: 50px; }
+.password a {
+  color: #FF00FF; }
+  .password a:hover {
+    color: #00FF00; }
+
+.password-form input {
   color: #00FFFF;
   background-color: #FF00FF;
-  margin: 30px auto; }
-  .password input:hover {
-    background: #00FF00; }
+  margin: 30px auto;
+  font-family: "SinkinSans"; }
+  .password-form input:hover {
+    background: #00FF00;
+    color: #FF00FF; }
+
+@media only screen and (max-width: 750px) {
+  .password h2 {
+    width: 90%; } }
