@@ -466,18 +466,18 @@ header .index-1 .nav-bar {
     text-decoration: none;
     margin: 10px 0;
     padding: 3px 0;
-    color: #FF00FF; }
+    color: #ff47ac; }
     header .index-1 .nav-bar .nav-button:focus {
       background-image: url("/assets/img/rose.png");
       background-position: center;
       background-repeat: no-repeat;
-      color: #00FFFF;
+      color: #71ccde;
       cursor: pointer; }
     header .index-1 .nav-bar .nav-button:hover {
       background-image: url("/assets/img/rose.png");
       background-position: center;
       background-repeat: no-repeat;
-      color: #00FFFF;
+      color: #71ccde;
       cursor: pointer; }
 
 @media only screen and (max-width: 1000px) {
@@ -501,17 +501,15 @@ footer {
   bottom: 0; }
   footer p {
     position: absolute;
-    color: #FF00FF;
-    background-image: url("/assets/img/background.png");
-    background-repeat: no-repeat;
-    background-size: cover;
+    color: #ff47ac;
+    background-color: #71ccde;
     padding: 10px 0px;
     width: 100%;
     font-family: "SinkinSans"; }
   footer a {
-    color: #FF00FF; }
+    color: #ff47ac; }
     footer a:hover {
-      color: #00FF00; }
+      color: #1fbd00; }
 
 @font-face {
   font-family: Paet;
@@ -556,11 +554,11 @@ footer {
       width: 50px;
       line-height: 50px;
       text-align: center;
-      color: #00FFFF;
+      color: #71ccde;
       border-radius: 50%;
       margin: 10px 15px;
       position: relative;
-      background-color: #FF00FF;
+      background-color: #ff47ac;
       text-decoration: none;
       font-size: 28px; }
       .home .section-1 .social-links a:hover {
@@ -635,18 +633,18 @@ footer {
   font-family: "SinkinSans"; }
   .gigs-page .header {
     width: 100%;
-    color: #00FF00;
+    color: #1fbd00;
     font-size: 30px; }
   .gigs-page .gigs {
     max-width: 800px;
     margin: 40px auto 40px;
     background-color: #FFFFFF;
-    border: 3px solid #FF00FF; }
+    border: 3px solid #ff47ac; }
     .gigs-page .gigs a {
       font-family: "SinkinSans";
-      color: #FF00FF; }
+      color: #ff47ac; }
       .gigs-page .gigs a:hover {
-        color: #00FF00; }
+        color: #1fbd00; }
   @media only screen and (max-width: 800px) {
     .gigs-page {
       max-width: 100%; } }
@@ -656,7 +654,7 @@ footer {
   margin: 0px auto; }
   .music-video h2 {
     font-family: "SinkinSans";
-    color: #FF00FF;
+    color: #ff47ac;
     text-align: center; }
   .music-video iframe {
     width: 940px;
@@ -680,7 +678,7 @@ form {
   border: none;
   font-family: "SinkinSans"; }
   form input, form textarea {
-    border: 3px solid #FF00FF;
+    border: 3px solid #ff47ac;
     width: 100%;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -693,24 +691,24 @@ form {
     font-family: "SinkinSans"; }
     form input:focus, form textarea:focus {
       outline: none;
-      border-color: #00FF00; }
+      border-color: #1fbd00; }
   form label {
-    color: #FF00FF; }
+    color: #ff47ac; }
   form textarea {
     height: 10em;
     resize: none; }
   form .submit-wrap {
     text-align: right; }
   form [type="submit"] {
-    background: #FF00FF;
-    color: #00FFFF;
+    background: #ff47ac;
+    color: #71ccde;
     font-size: 18px;
     text-transform: uppercase;
     width: 33%;
     font-family: "SinkinSans"; }
     form [type="submit"]:hover {
-      background: #00FF00;
-      color: #FF00FF; }
+      background: #1fbd00;
+      color: #ff47ac; }
   form .contact-info-group label {
     width: 50%;
     float: left;
@@ -822,18 +820,18 @@ header .index-1 .nav-bar {
     text-decoration: none;
     margin: 10px 0;
     padding: 3px 20px;
-    color: #FF00FF; }
+    color: #ff47ac; }
     header .index-1 .nav-bar .nav-button:focus {
       background-image: url("/assets/img/rose.png");
       background-position: center;
       background-repeat: no-repeat;
-      color: #00FFFF;
+      color: #71ccde;
       cursor: pointer; }
     header .index-1 .nav-bar .nav-button:hover {
       background-image: url("/assets/img/rose.png");
       background-position: center;
       background-repeat: no-repeat;
-      color: #00FFFF;
+      color: #71ccde;
       cursor: pointer; }
 
 @media only screen and (max-width: 1000px) {
@@ -866,7 +864,7 @@ header .index-1 .nav-bar {
   font-size: 30px; }
   .epk .header {
     width: 100%;
-    color: #00FF00;
+    color: #1fbd00;
     font-size: 40px;
     font-family: "SinkinSans"; }
   .epk .profile img {
@@ -904,11 +902,11 @@ header .index-1 .nav-bar {
       width: 80px;
       line-height: 80px;
       text-align: center;
-      color: #00FFFF;
+      color: #71ccde;
       border-radius: 50%;
       margin: 10px 15px;
       position: relative;
-      background-color: #FF00FF;
+      background-color: #ff47ac;
       text-decoration: none;
       font-size: 50px; }
       .epk .social .links a:hover {
@@ -921,7 +919,7 @@ header .index-1 .nav-bar {
         cursor: pointer; }
   .epk .music .epk-video h2 {
     font-family: "SinkinSans";
-    color: #FF00FF; }
+    color: #ff47ac; }
   .epk .music .epk-video iframe {
     width: 640px;
     height: 360px;
@@ -953,7 +951,7 @@ header .index-1 .nav-bar {
           -o-transform: scale(1.5);
           transform: scale(1.5); }
       .epk .pics .pic-control path {
-        fill: #FF00FF; }
+        fill: #ff47ac; }
       .epk .pics .pic-control .pic-control-next {
         position: absolute;
         top: 50%;
@@ -988,24 +986,24 @@ header .index-1 .nav-bar {
           opacity: 0.8;
           cursor: pointer; }
         .epk .pics .pic-thumbs .pic-thumb.active-client {
-          border: 2px solid #FF00FF;
+          border: 2px solid #ff47ac;
           opacity: 1; }
   .epk .shows .shows-toolbar {
     margin: 40px auto 40px;
     background-color: #FFFFFF;
-    border: 3px solid #FF00FF; }
+    border: 3px solid #ff47ac; }
     .epk .shows .shows-toolbar a {
       font-family: "SinkinSans";
-      color: #FF00FF; }
+      color: #ff47ac; }
       .epk .shows .shows-toolbar a:hover {
-        color: #00FF00; }
+        color: #1fbd00; }
   .epk .epk-contact .contact-info {
-    color: #FF00FF; }
+    color: #ff47ac; }
   .epk .epk-contact .big-link {
     margin-bottom: 30px;
     padding-bottom: 30px; }
     .epk .epk-contact .big-link a {
-      color: #FF00FF;
+      color: #ff47ac;
       font-size: 50px; }
       .epk .epk-contact .big-link a:hover {
         -webkit-transform: scale(1.5);
@@ -1013,7 +1011,7 @@ header .index-1 .nav-bar {
         -ms-transform: scale(1.5);
         -o-transform: scale(1.5);
         transform: scale(1.5);
-        color: #00FF00; }
+        color: #1fbd00; }
 
 @media only screen and (max-width: 1020px) {
   .epk {
@@ -1090,18 +1088,18 @@ header .index-1 .nav-bar {
     text-decoration: none;
     margin: 10px 0;
     padding: 3px 20px;
-    color: #FF00FF; }
+    color: #ff47ac; }
     header .index-1 .nav-bar .nav-button:focus {
       background-image: url("/assets/img/rose.png");
       background-position: center;
       background-repeat: no-repeat;
-      color: #00FFFF;
+      color: #71ccde;
       cursor: pointer; }
     header .index-1 .nav-bar .nav-button:hover {
       background-image: url("/assets/img/rose.png");
       background-position: center;
       background-repeat: no-repeat;
-      color: #00FFFF;
+      color: #71ccde;
       cursor: pointer; }
 
 @media only screen and (max-width: 1000px) {
@@ -1121,21 +1119,21 @@ header .index-1 .nav-bar {
   text-align: center;
   margin: 40px auto;
   max-width: 700px;
-  font-family: "Journal";
-  font-size: 50px; }
+  font-family: "SinkinSans";
+  font-size: 30px; }
 .password a {
-  color: #FF00FF; }
+  color: #ff47ac; }
   .password a:hover {
-    color: #00FF00; }
+    color: #1fbd00; }
 
 .password-form input {
-  color: #00FFFF;
-  background-color: #FF00FF;
+  color: #71ccde;
+  background-color: #ff47ac;
   margin: 30px auto;
   font-family: "SinkinSans"; }
   .password-form input:hover {
-    background: #00FF00;
-    color: #FF00FF; }
+    background: #1fbd00;
+    color: #ff47ac; }
 
 @media only screen and (max-width: 750px) {
   .password h2 {
