@@ -54,19 +54,21 @@ layout: epk-base
     <div class="header">
       <h1>Pictures</h1>
     </div>
-    <div class="pic-control">
-      <div class="pic-control-next">{% include icons/icon-next.html %}</div>
-      <div class="pic-control-prev">{% include icons/icon-prev.html %}</div>
-    </div>
-    <div class="pic-belt">
-      {% for client in site.data.settings.clients %}
-        <img class="pic-reel {% if forloop.first %}active-client{% endif %}" src="assets/img/Band/{{ client.full }}" align="{{ client.full }}">
-      {% endfor %}
-    </div>
-    <div class="pic-thumbs">
-      {% for client in site.data.settings.clients %}
-        <img class="pic-thumb {% if forloop.first %}active-client{% endif %}" src="assets/img/Band/{{ client.thumb }}" align="{{ client.thumb }}">
-      {% endfor %}
+    <div class= "band">
+      <div class="pic-control">
+        <div class="pic-control-next">{% include icons/icon-next.html %}</div>
+        <div class="pic-control-prev">{% include icons/icon-prev.html %}</div>
+      </div>
+      <div class="pic-belt">
+        {% for client in site.data.settings.clients %}
+          <img class="pic-reel {% if forloop.first %}active-client{% endif %}" src="assets/img/Band/{{ client.full }}" align="{{ client.full }}">
+        {% endfor %}
+      </div>
+      <div class="pic-thumbs">
+        {% for client in site.data.settings.clients %}
+          <img class="pic-thumb {% if forloop.first %}active-client{% endif %}" src="assets/img/Band/{{ client.thumb }}" align="{{ client.thumb }}">
+        {% endfor %}
+      </div>
     </div>
   </section>
 

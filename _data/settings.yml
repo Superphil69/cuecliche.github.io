@@ -19,3 +19,15 @@ clients:
   thumb: 'keith-thumb.jpg'}
 - {full: 'terry.jpg',
   thumb: 'terry-thumb.jpg'}
+- {full: 'fiddlers.jpg',
+  thumb: 'fiddlers-thumb.jpg'}
+- {full: 'Fiddlers1.jpg',
+  thumb: 'Fiddlers1-thumb.jpg'}
+- {full: 'Fiddlers2.jpg',
+  thumb: 'Fiddlers2-thumb.jpg'}
+- {full: 'Fiddlers3.jpg',
+  thumb: 'Fiddlers3-thumb.jpg'}
+- {full: 'Fiddlers4.jpg',
+  thumb: 'Fiddlers4-thumb.jpg'}
+- {full: 'Fiddlers5.jpg',
+  thumb: 'Fiddlers5-thumb.jpg'}
