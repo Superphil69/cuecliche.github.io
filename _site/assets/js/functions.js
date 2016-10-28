@@ -1,45 +1,26 @@
-$(function() {
-	clientStuff();
-});
+var slideIndex = 1;
+showSlides(slideIndex);
 
-function clientStuff() {
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
 
-  $('.pic-reel, .pic-thumb').click(function() {
-    var $this = $(this),
-        position = $this.parent().children().index($this);
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
 
-    $('.pic-reel').removeClass('active-client').eq(position).addClass('active-client');
-    $('.pic-thumb').removeClass('active-client').eq(position).addClass('active-client');
-  });
-
-
-  $('.pic-control-next, .pic-control-prev').click(function() {
-
-    var $this = $(this),
-        curActiveClient = $('.pic-belt').find('.active-client'),
-        position = $('.pic-belt').children().index(curActiveClient),
-        clientNum = $('.pic-reel').length;
-
-      if($this.hasClass('pic-control-next')) {
-
-        if(position < clientNum -1){
-          $('.active-client').removeClass('active-client').next().addClass('active-client');
-        } else {
-          $('.pic-reel').removeClass('active-client').first().addClass('active-client');
-          $('.pic-thumb').removeClass('active-client').first().addClass('active-client');
-        }
-
-      } else {
-
-        if (position === 0) {
-          $('.pic-reel').removeClass('active-client').last().addClass('active-client');
-          $('.pic-thumb').removeClass('active-client').last().addClass('active-client');
-        } else {
-          $('.active-client').removeClass('active-client').prev().addClass('active-client');
-        }
-
-      }
-
-  });
-
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
 }

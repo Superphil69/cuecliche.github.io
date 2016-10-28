@@ -2,32 +2,3 @@
 # General Site Settings
 
 email: cuecliche@gmail.com
-
-#-------------------------------
-# Clients Section
-
-clients:
-- {full: 'band1.jpg',
-  thumb: 'band1-thumb.jpg'}
-- {full: 'band2.jpg',
-  thumb: 'band2-thumb.jpg'}
-- {full: 'band3.jpg',
-  thumb: 'band3-thumb.jpg'}
-- {full: 'jake.jpg',
-  thumb: 'jake-thumb.jpg'}
-- {full: 'keith.jpg',
-  thumb: 'keith-thumb.jpg'}
-- {full: 'terry.jpg',
-  thumb: 'terry-thumb.jpg'}
-- {full: 'fiddlers.jpg',
-  thumb: 'fiddlers-thumb.jpg'}
-- {full: 'Fiddlers1.jpg',
-  thumb: 'Fiddlers1-thumb.jpg'}
-- {full: 'Fiddlers2.jpg',
-  thumb: 'Fiddlers2-thumb.jpg'}
-- {full: 'Fiddlers3.jpg',
-  thumb: 'Fiddlers3-thumb.jpg'}
-- {full: 'Fiddlers4.jpg',
-  thumb: 'Fiddlers4-thumb.jpg'}
-- {full: 'Fiddlers5.jpg',
-  thumb: 'Fiddlers5-thumb.jpg'}
