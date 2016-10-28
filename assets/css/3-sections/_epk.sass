@@ -62,62 +62,6 @@
     .bio-text
       text-align: justify
 
-  .pics
-    position: relative
-    .pic-control
-      +position(absolute, 0px 0px 0px 0px)
-      z-index: 2
-
-      > div
-        +size(40px)
-        overflow: hidden
-        margin-top: -20px
-        cursor: pointer
-        &:hover
-          +transform(scale(1.5))
-
-      path
-        fill: #ff47ac
-
-      .pic-control-next
-        +position(absolute, 50% -40px null null)
-
-      .pic-control-prev
-        +position(absolute, 50% null null -40px)
-
-    .pic-reel
-      margin: 0px auto
-      width: 940px
-      height: 0
-      overflow: hidden
-      transition: opacity 1s ease-out
-      opacity: 0
-      -webkit-box-shadow: 0px 0px 60px 3px rgba(66,51,37,1)
-      -moz-box-shadow: 0px 0px 60px 3px rgba(66,51,37,1)
-      box-shadow: 0px 0px 60px 3px rgba(66,51,37,1)
-
-      &.active-client
-        height: auto
-        opacity: 1
-
-    .pic-thumbs
-      z-index: 3
-      position: relative
-      .pic-thumb
-        display: inline-block
-        width: 148.3px
-        height: auto
-        margin: 5px 0px
-        opacity: 0.5
-
-        &:hover
-          opacity: 0.8
-          cursor: pointer
-
-        &.active-client
-          border: 2px solid #ff47ac
-          opacity: 1
-
   .shows
     .shows-toolbar
       margin: 40px auto 40px
@@ -154,20 +98,6 @@
       img
         width: 100%
 
-    .pics
-      .pic-control
-        .pic-control-next
-          +position(absolute, 50% 10px null null)
-
-        .pic-control-prev
-          +position(absolute, 50% null null 10px)
-
-      .pic-reel
-        width: 98%
-      .pic-thumbs
-        .pic-thumb
-          width: 15.3%
-
 @media only screen and (max-width:800px)
   .epk
     .shows
@@ -185,14 +115,6 @@
           width: 90%
           height: 45%
 
-    .pics
-      .pic-control
-        display: none
-
-      .pic-thumbs
-        .pic-thumb
-          width: 31.3%
-
 @media only screen and (max-width:500px)
   .epk
     .social
@@ -206,10 +128,3 @@
       .epk-video
         iframe
           height: 30%
-
-@media only screen and (max-width:430px)
-  .epk
-    .pics
-      .pic-thumbs
-        .pic-thumb
-          width: 30%

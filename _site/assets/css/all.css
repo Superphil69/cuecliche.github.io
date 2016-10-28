@@ -505,10 +505,20 @@ footer {
     background-color: transparent;
     padding: 10px 0px;
     width: 100%;
-    font-family: "SinkinSans"; }
+    font-family: "SinkinSans";
+    font-size: 12px; }
   footer a {
     color: #ff47ac; }
     footer a:hover {
+      color: #1fbd00; }
+  footer .nav-button {
+    font-weight: bold;
+    margin-left: 20px;
+    padding: 3px 0;
+    color: #ff47ac; }
+    footer .nav-button:focus {
+      color: #1fbd00; }
+    footer .nav-button:hover {
       color: #1fbd00; }
 
 @font-face {
@@ -929,65 +939,6 @@ header .index-1 .nav-bar {
     box-shadow: 0px 0px 60px 3px #423325; }
   .epk .bio .bio-text {
     text-align: justify; }
-  .epk .pics {
-    position: relative; }
-    .epk .pics .pic-control {
-      position: absolute;
-      top: 0px;
-      right: 0px;
-      bottom: 0px;
-      left: 0px;
-      z-index: 2; }
-      .epk .pics .pic-control > div {
-        height: 40px;
-        width: 40px;
-        overflow: hidden;
-        margin-top: -20px;
-        cursor: pointer; }
-        .epk .pics .pic-control > div:hover {
-          -webkit-transform: scale(1.5);
-          -moz-transform: scale(1.5);
-          -ms-transform: scale(1.5);
-          -o-transform: scale(1.5);
-          transform: scale(1.5); }
-      .epk .pics .pic-control path {
-        fill: #ff47ac; }
-      .epk .pics .pic-control .pic-control-next {
-        position: absolute;
-        top: 50%;
-        right: -40px; }
-      .epk .pics .pic-control .pic-control-prev {
-        position: absolute;
-        top: 50%;
-        left: -40px; }
-    .epk .pics .pic-reel {
-      margin: 0px auto;
-      width: 940px;
-      height: 0;
-      overflow: hidden;
-      transition: opacity 1s ease-out;
-      opacity: 0;
-      -webkit-box-shadow: 0px 0px 60px 3px #423325;
-      -moz-box-shadow: 0px 0px 60px 3px #423325;
-      box-shadow: 0px 0px 60px 3px #423325; }
-      .epk .pics .pic-reel.active-client {
-        height: auto;
-        opacity: 1; }
-    .epk .pics .pic-thumbs {
-      z-index: 3;
-      position: relative; }
-      .epk .pics .pic-thumbs .pic-thumb {
-        display: inline-block;
-        width: 148.3px;
-        height: auto;
-        margin: 5px 0px;
-        opacity: 0.5; }
-        .epk .pics .pic-thumbs .pic-thumb:hover {
-          opacity: 0.8;
-          cursor: pointer; }
-        .epk .pics .pic-thumbs .pic-thumb.active-client {
-          border: 2px solid #ff47ac;
-          opacity: 1; }
   .epk .shows .shows-toolbar {
     margin: 40px auto 40px;
     background-color: #FFFFFF;
@@ -1017,19 +968,7 @@ header .index-1 .nav-bar {
   .epk {
     max-width: 95%; }
     .epk .profile img {
-      width: 100%; }
-    .epk .pics .pic-control .pic-control-next {
-      position: absolute;
-      top: 50%;
-      right: 10px; }
-    .epk .pics .pic-control .pic-control-prev {
-      position: absolute;
-      top: 50%;
-      left: 10px; }
-    .epk .pics .pic-reel {
-      width: 98%; }
-    .epk .pics .pic-thumbs .pic-thumb {
-      width: 15.3%; } }
+      width: 100%; } }
 @media only screen and (max-width: 800px) {
   .epk .shows .shows-toolbar {
     max-width: 100%; } }
@@ -1038,11 +977,7 @@ header .index-1 .nav-bar {
     font-size: 30px; }
   .epk .music .epk-video iframe {
     width: 90%;
-    height: 45%; }
-  .epk .pics .pic-control {
-    display: none; }
-  .epk .pics .pic-thumbs .pic-thumb {
-    width: 31.3%; } }
+    height: 45%; } }
 @media only screen and (max-width: 500px) {
   .epk .social .links a {
     height: 50px;
@@ -1051,9 +986,69 @@ header .index-1 .nav-bar {
     font-size: 25px; }
   .epk .music .epk-video iframe {
     height: 30%; } }
-@media only screen and (max-width: 430px) {
-  .epk .pics .pic-thumbs .pic-thumb {
-    width: 30%; } }
+.epk .pics {
+  /* Next & previous buttons */
+  /* Position the "next button" to the right */
+  /* On hover, add a black background color with a little bit see-through */
+  /* The dots/bullets/indicators */
+  /* Fading animation */ }
+  .epk .pics .slideshow-container {
+    max-width: 940px;
+    position: relative;
+    margin: auto; }
+    .epk .pics .slideshow-container .mySlides img {
+      width: 940px;
+      height: auto; }
+  .epk .pics .prev, .epk .pics .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: #ff47ac;
+    font-weight: bold;
+    font-size: 25px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0; }
+  .epk .pics .prev {
+    left: 0;
+    border-radius: 3px 0 0 3px; }
+  .epk .pics .next {
+    right: 0;
+    border-radius: 3px 0 0 3px; }
+  .epk .pics .prev:hover, .epk .pics .next:hover {
+    background-color: rgba(31, 189, 0, 0.8); }
+  .epk .pics .dot {
+    cursor: pointer;
+    height: 13px;
+    width: 13px;
+    margin: 0 2px;
+    background-color: #ff47ac;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease; }
+  .epk .pics .active, .epk .pics .dot:hover {
+    background-color: #1fbd00; }
+  .epk .pics .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s; }
+@-webkit-keyframes fade {
+  from {
+    opacity: .4; }
+  to {
+    opacity: 1; } }
+@keyframes fade {
+  from {
+    opacity: .4; }
+  to {
+    opacity: 1; } }
+@media only screen and (max-width: 940px) {
+  .epk .pics .slideshow-container .mySlides img {
+    width: 100%;
+    height: auto; } }
 @font-face {
   font-family: SinkinSans;
   font-weight: normal;
@@ -1138,3 +1133,27 @@ header .index-1 .nav-bar {
 @media only screen and (max-width: 750px) {
   .password h2 {
     width: 90%; } }
+@font-face {
+  font-family: SinkinSans;
+  font-weight: normal;
+  font-style: normal;
+  src: url("SinkinSans-500Medium-webfont.eot");
+  src: url("SinkinSans-500Medium-webfont.eot?#iefix") format("embedded-opentype"), url("SinkinSans-500Medium-webfont.woff") format("woff"), url("SinkinSans-500Medium-webfont.ttf") format("truetype"), url("SinkinSans-500Medium-webfont.svg#SinkinSans") format("svg"); }
+@font-face {
+  font-family: Journal;
+  font-weight: normal;
+  font-style: normal;
+  src: url("journal-webfont.eot");
+  src: url("journal-webfont.eot?#iefix") format("embedded-opentype"), url("journal-webfont.woff") format("woff"), url("journal-webfont.ttf") format("truetype"), url("journal-webfont.svg#Journal") format("svg"); }
+.credits {
+  max-width: 960px;
+  margin: 44px auto;
+  text-align: center;
+  font-family: "SinkinSans";
+  font-size: 27px; }
+  .credits .thanks {
+    font-size: 40px; }
+  .credits a {
+    color: #ff47ac; }
+    .credits a:hover {
+      color: #1fbd00; }

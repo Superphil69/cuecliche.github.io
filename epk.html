@@ -54,21 +54,53 @@ layout: epk-base
     <div class="header">
       <h1>Pictures</h1>
     </div>
-    <div class= "band">
-      <div class="pic-control">
-        <div class="pic-control-next">{% include icons/icon-next.html %}</div>
-        <div class="pic-control-prev">{% include icons/icon-prev.html %}</div>
+    <div class="slideshow-container">
+      <div class="mySlides fade">
+        <img src="/assets/img/Band/jake.jpg">
       </div>
-      <div class="pic-belt">
-        {% for client in site.data.settings.clients %}
-          <img class="pic-reel {% if forloop.first %}active-client{% endif %}" src="assets/img/Band/{{ client.full }}" align="{{ client.full }}">
-        {% endfor %}
+
+      <div class="mySlides fade">
+        <img src="/assets/img/Band/keith.jpg">
       </div>
-      <div class="pic-thumbs">
-        {% for client in site.data.settings.clients %}
-          <img class="pic-thumb {% if forloop.first %}active-client{% endif %}" src="assets/img/Band/{{ client.thumb }}" align="{{ client.thumb }}">
-        {% endfor %}
+
+      <div class="mySlides fade">
+        <img src="/assets/img/Band/terry.jpg">
       </div>
+
+      <div class="mySlides fade">
+        <img src="/assets/img/Band/Fiddlers1.jpg">
+      </div>
+
+      <div class="mySlides fade">
+        <img src="/assets/img/Band/Fiddlers2.jpg">
+      </div>
+
+      <div class="mySlides fade">
+        <img src="/assets/img/Band/Fiddlers3.jpg">
+      </div>
+
+      <div class="mySlides fade">
+        <img src="/assets/img/Band/Fiddlers4.jpg">
+      </div>
+
+      <div class="mySlides fade">
+        <img src="/assets/img/Band/Fiddlers5.jpg">
+      </div>
+
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br>
+
+    <div class="dots">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+      <span class="dot" onclick="currentSlide(4)"></span>
+      <span class="dot" onclick="currentSlide(5)"></span>
+      <span class="dot" onclick="currentSlide(6)"></span>
+      <span class="dot" onclick="currentSlide(7)"></span>
+      <span class="dot" onclick="currentSlide(8)"></span>
     </div>
   </section>
 
