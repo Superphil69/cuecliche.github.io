@@ -660,7 +660,7 @@ footer {
       max-width: 100%; } }
 
 .music-video {
-  max-width: 940px;
+  max-width: 650px;
   margin: 0px auto; }
   .music-video h2 {
     font-family: "SinkinSans";
@@ -668,17 +668,17 @@ footer {
   .music-video .color-text {
     color: #ff47ac; }
   .music-video iframe {
-    width: 940px;
-    height: 530px;
+    width: 650px;
+    height: 450px;
     margin: 5px;
     -webkit-box-shadow: 0px 0px 60px 3px #423325;
     -moz-box-shadow: 0px 0px 60px 3px #423325;
     box-shadow: 0px 0px 60px 3px #423325; }
   .music-video .EP img {
-    width: 940px;
+    width: 650px;
     margin: 5px; }
 
-@media only screen and (max-width: 960px) {
+@media only screen and (max-width: 660px) {
   .music-video {
     max-width: 95%;
     margin: 0px auto; }
@@ -1176,9 +1176,8 @@ header .index-1 .nav-bar {
 .landing {
   margin: 20px auto;
   text-align: center; }
-  .landing .EP {
-    text-align: center;
-    img-width: 940px; }
+  .landing .EP img {
+    max-width: 450px; }
   .landing .info {
     font-family: "SinkinSans";
     text-align: justify;
@@ -1196,7 +1195,7 @@ header .index-1 .nav-bar {
       background: #1fbd00;
       color: #ff47ac; }
 
-@media only screen and (max-width: 960px) {
+@media only screen and (max-width: 460px) {
   .landing {
     max-width: 95%;
     margin: 0px auto; }
