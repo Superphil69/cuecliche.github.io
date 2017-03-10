@@ -6,8 +6,8 @@
 </description>
     <link>http://example.com/</link>
     <atom:link href="http://example.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 28 Oct 2016 16:09:41 +0200</pubDate>
-    <lastBuildDate>Fri, 28 Oct 2016 16:09:41 +0200</lastBuildDate>
+    <pubDate>Fri, 10 Mar 2017 16:08:27 +0000</pubDate>
+    <lastBuildDate>Fri, 10 Mar 2017 16:08:27 +0000</lastBuildDate>
     <generator>Jekyll v3.2.0</generator>
     
       <item>
@@ -18,7 +18,7 @@
 &lt;!--more--&gt;
 Once Miss Alex is ready to start blogging, the posts will appear here.&lt;/p&gt;
 </description>
-        <pubDate>Thu, 01 Sep 2016 14:41:00 +0200</pubDate>
+        <pubDate>Thu, 01 Sep 2016 13:41:00 +0100</pubDate>
         <link>http://example.com/testing/2016/09/01/Blog-testing.html</link>
         <guid isPermaLink="true">http://example.com/testing/2016/09/01/Blog-testing.html</guid>
         
@@ -44,7 +44,7 @@ Once Miss Alex is ready to start blogging, the posts will appear here.&lt;/p&gt;
 &lt;p&gt;Check out the &lt;a href=&quot;http://jekyllrb.com/docs/home&quot;&gt;Jekyll docs&lt;/a&gt; for more info on how to get the most out of Jekyll. File all bugs/feature requests at &lt;a href=&quot;https://github.com/jekyll/jekyll&quot;&gt;Jekyll’s GitHub repo&lt;/a&gt;. If you have questions, you can ask them on &lt;a href=&quot;https://talk.jekyllrb.com/&quot;&gt;Jekyll Talk&lt;/a&gt;.&lt;/p&gt;
 
 </description>
-        <pubDate>Mon, 01 Aug 2016 13:09:50 +0200</pubDate>
+        <pubDate>Mon, 01 Aug 2016 12:09:50 +0100</pubDate>
         <link>http://example.com/jekyll/update/2016/08/01/welcome-to-jekyll.html</link>
         <guid isPermaLink="true">http://example.com/jekyll/update/2016/08/01/welcome-to-jekyll.html</guid>
         
